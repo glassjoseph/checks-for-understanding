@@ -16,7 +16,7 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 3. What do Controllers generally inherit from in a rails project?
   * `ApplicationController`
 4. How would I create a route if I wanted to see a specific horse in my routes file assuming I'm sticking to standard conventions and that I didn't want other CRUD functionality?
-  * resources :horses, only: [:view]
+  * `resources :horses, only: [:view]`
 5. What rake task is useful when looking at routes, and what information does it give you?
   * `rake routes` - gives you the path prefixes, the HTTP Verb, the URI, and the Controller Action
 6. What is an example of a route helper? When would you use them?
@@ -30,12 +30,13 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 10. How does `form_for` know where to submit the user's input?
   * From the object passed in to it.
 11. Create a form using a `form_for` helper to create a new `Horse`.
-  * ```
+  ```
   <%= form_for @horse do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.label :age %>
   <%= f.number_field :age %>
+  ```
   
 12. Why do we want to validate our models?
   * To make sure our objects are not created without all the required attributes. 
