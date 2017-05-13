@@ -21,9 +21,9 @@ Note: When you're done, submit a PR.
 7. How do you create a record in the following table in SQL? In Active Record?   
    (Users table with columns first_name, last_name, email, and age)
   * `INSERT INTO users (first_name, last_name, email, age) VALUES ('James', 'Hill', 'j@.com', 30);`
-  * User.create(first_name: 'James', last_name: 'Hill', email: 'j@.com', age: 30)
+  * `User.create(first_name: 'James', last_name: 'Hill', email: 'j@.com', age: 30)`
 8. Given an array numbers = [1,2,3,4,5], find the sum of the doubles of all the numbers.
-  * array.map{ |n| n * 2}.reduce(:+)
+  * `array.map{ |n| n * 2}.reduce(:+)`
 
 #### Self Assessment  
 Rate yourself on the following scale.  
